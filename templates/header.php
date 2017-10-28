@@ -1,6 +1,11 @@
 <header class="banner">
   <div class="container">
-    <a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+    <div class="logo">
+      <a class="brand" href="<?= esc_url(home_url('/')); ?>">
+        <?php bloginfo('name'); ?>
+  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo.jpg" />
+      </a>
+    </div>
     <nav class="nav-primary">
       <?php
       if (has_nav_menu('primary_navigation')) :
