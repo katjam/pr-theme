@@ -2,10 +2,11 @@
   <div class="container">
     <div class="logo">
       <a class="brand" href="<?= esc_url(home_url('/')); ?>">
-        <?php bloginfo('name'); ?>
+        <span class="screen-reader-text"><?php bloginfo('name'); ?></span>
   <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo.jpg" />
       </a>
     </div>
+    <p><?php echo get_bloginfo ( 'description', 'display' ); ?></p>
     <nav class="nav-primary">
       <?php
       if (has_nav_menu('primary_navigation')) :
