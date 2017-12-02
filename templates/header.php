@@ -1,4 +1,4 @@
-<header class="banner">
+<header id="header" class="banner">
   <div class="container">
     <div class="alignleft">
       <div class="logo">
@@ -13,14 +13,14 @@
     <div class='alignright'>
       <?php dynamic_sidebar('sidebar-header'); ?>
     </div>
-    <div style="clear:both">
-      <nav class="nav-primary">
-        <?php
-        if (has_nav_menu('primary_navigation')) :
-          wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
-        endif;
-        ?>
-      </nav>
-    </div>
   </div>
 </header>
+<nav class="nav-primary">
+  <div class="container">
+    <?php
+    if (has_nav_menu('primary_navigation')) :
+      wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
+    endif;
+    ?>
+</div>
+</nav>
