@@ -1,4 +1,14 @@
+#content {
+  padding-bottom: 144px; // Height of footer.
+}
+
 footer {
-  color: $pr_white;
-  background-color: $pr_blue;
+  color: $pr_grey;
+  background-color: $pr_black;
+  width: 100%;
+  font-size: 0.8em;
+  height: 144px;
+  position: absolute;
+  bottom: 0;
+  padding: 1em;
 }

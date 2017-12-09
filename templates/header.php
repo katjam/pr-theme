@@ -7,7 +7,7 @@
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo.jpg" />
         </a>
       </div>
-      <p><?php echo get_bloginfo ( 'description', 'display' ); ?></p>
+      <p><?php echo get_bloginfo('description', 'display'); ?></p>
     </div>
 
     <div class='alignright'>

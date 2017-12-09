@@ -1,4 +1,21 @@
 header {
   color: $pr_white;
   background-color: $pr_blue;
+  padding: 10px;
+  height: 150px;
+  .alignright {
+    text-align:right;
+    margin-top: 0.6rem;
+    font-size: 0.9em;
+    > div:first-child {
+      padding-bottom: 5px;
+    }
+  }
+  .numbers span {
+    display: block;
+    color: $pr_white;
+  }
+  .mailto a {
+    color: $pr_white;
+  }
 }

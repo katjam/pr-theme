@@ -1,8 +1,13 @@
-.nav-primary {
+nav {
+  background-color: $pr_grey;
   li {
-    padding: 6px;
-    a{
+    padding: 1em;
+    a {
       color: $pr_white;
     }
   }
+}
+
+.content {
+  padding-top: 3em;
 }
