@@ -1,9 +1,16 @@
-nav {
+.nav-primary {
   background-color: $pr_grey;
   li {
     padding: 1em;
+    &:first-child {
+      padding-left: 0;
+    }
     a {
       color: $pr_white;
+      &:hover {
+        color: #fff;
+        text-decoration: underline;
+      }
     }
   }
 }

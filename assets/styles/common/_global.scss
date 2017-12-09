@@ -22,3 +22,48 @@ a {
     color: #405cd4;
   }
 }
+
+.search-field {
+  margin-right: 1em;
+}
+
+.fa {
+  margin-right: 2px;
+}
+
+@media (max-width: 991px) {
+  #header {
+    height: 174px;
+  }
+  header .alignleft {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  #header {
+    height: 241px;
+  }
+  .nav-primary {
+    font-size: 0.8em;
+  }
+  .nav-primary li {
+    padding: 0.7em;
+  }
+  header .alignleft {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+  }
+  header .alignleft > p {
+    margin-bottom: 0;
+  }
+  header .alignright {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+  .logo img {
+    width: 45%;
+  }
+}

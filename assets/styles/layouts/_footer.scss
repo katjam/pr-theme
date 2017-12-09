@@ -11,4 +11,11 @@ footer {
   position: absolute;
   bottom: 0;
   padding: 1em;
+  div br {
+    display: none;
+  }
+  .container div {
+    text-align: center;
+    padding: 0.2em 0;
+  }
 }
