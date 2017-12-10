@@ -4,7 +4,7 @@
       <div class="logo">
         <a class="brand" href="<?= esc_url(home_url('/')); ?>">
           <span class="screen-reader-text"><?php bloginfo('name'); ?></span>
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo.jpg" />
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo.jpg" />
         </a>
       </div>
       <p><?php echo get_bloginfo('description', 'display'); ?></p>
