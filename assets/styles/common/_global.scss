@@ -32,38 +32,48 @@ a {
 }
 
 @media (max-width: 991px) {
-  #header {
-    height: 174px;
-  }
   header .alignleft {
     width: 50%;
   }
 }
 
 @media (max-width: 767px) {
-  #header {
-    height: 241px;
+  header#header {
+    .alignleft {
+      width: 100%;
+      text-align: center;
+      margin-right: 0;
+    }
+    .alignleft > p {
+      margin-bottom: 0;
+    }
+    .alignright {
+      width: 100%;
+      text-align: center;
+      margin-left: 0;
+    }
+    .logo img {
+      width: 45%;
+    }
   }
   .nav-primary {
-    font-size: 0.8em;
+    ul li {
+      padding: 0.4em 0.8em 0.4em 0;
+    }
   }
-  .nav-primary li {
-    padding: 0.7em;
-  }
-  header .alignleft {
-    width: 100%;
+
+}
+
+@media (max-width: 380px) {
+  #header {
+    height: 241px;
     text-align: center;
-    margin-right: 0;
   }
-  header .alignleft > p {
-    margin-bottom: 0;
-  }
-  header .alignright {
-    width: 100%;
-    text-align: center;
-    margin-left: 0;
-  }
-  .logo img {
-    width: 45%;
+  #content main .page-content {
+      display: block;
+      img {
+        padding: 1em;
+        width: 100%;
+      }
   }
 }
