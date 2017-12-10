@@ -35,6 +35,9 @@ a {
   header .alignleft {
     width: 50%;
   }
+  .nav {
+    width: 100%;
+  }
 }
 
 @media (max-width: 380px) {
@@ -57,21 +60,22 @@ a {
       width: 45%;
     }
   }
-}
-.nav-primary {
-  .nav {
-    width: 100%;
-    padding: 0;
-  }
-  ul li {
-    padding: 0.4em 0.8em 0.4em 0;
-  }
-}
 
-#content main .page-content {
+  .nav-primary {
+    .nav {
+      width: 100%;
+      padding: 0;
+    }
+    ul li {
+      padding: 0.4em 0.8em 0.4em 0;
+    }
+  }
+
+  #content main .page-content {
     display: block;
     img {
       padding: 1em;
       width: 100%;
     }
+  }
 }
