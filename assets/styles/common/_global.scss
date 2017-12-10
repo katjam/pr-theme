@@ -37,8 +37,9 @@ a {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 380px) {
   header#header {
+    height: 241px;
     .alignleft {
       width: 100%;
       text-align: center;
@@ -56,24 +57,21 @@ a {
       width: 45%;
     }
   }
-  .nav-primary {
-    ul li {
-      padding: 0.4em 0.8em 0.4em 0;
-    }
+}
+.nav-primary {
+  .nav {
+    width: 100%;
+    padding: 0;
   }
-
+  ul li {
+    padding: 0.4em 0.8em 0.4em 0;
+  }
 }
 
-@media (max-width: 380px) {
-  #header {
-    height: 241px;
-    text-align: center;
-  }
-  #content main .page-content {
-      display: block;
-      img {
-        padding: 1em;
-        width: 100%;
-      }
-  }
+#content main .page-content {
+    display: block;
+    img {
+      padding: 1em;
+      width: 100%;
+    }
 }
