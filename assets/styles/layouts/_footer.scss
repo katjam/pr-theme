@@ -1,14 +1,17 @@
-#content {
-  padding-bottom: 144px; // Height of footer.
-}
-
 footer {
   color: $pr_white;
   background-color: $pr_black;
   width: 100%;
-  font-size: 1em;
-  height: 144px;
-  position: absolute;
-  bottom: 0;
+  font-size: 0.8em;
   padding: 1em;
+  
+  div {
+    padding: 6px;
+  }
+
+  .rics-logo {
+    background: url(../images/rics-logo-64.png) no-repeat;
+    height: 60px;
+    padding-left: 68px;
+  }
 }
