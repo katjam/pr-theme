@@ -1,7 +1,7 @@
 <div class="page-content">
   <div class="row">
     <div class="col-md-8">
-      <div class="row"><?php the_content(); ?></div>
+      <div><?php the_content(); ?></div>
       <?php $pr_img_text_sets = get_post_meta($post->ID, 'pr_img_text_sets', true);
         if ( $pr_img_text_sets ) : ?>
           <?php foreach ( $pr_img_text_sets as $field ) { ?>
