@@ -3,13 +3,8 @@ header {
   background-color: $pr_blue;
   padding: 10px;
   height: 150px;
-  .alignright {
+  .align-right {
     text-align:right;
-    margin-top: 0.6rem;
-    font-size: 0.9em;
-    > div:first-child {
-      padding-bottom: 5px;
-    }
   }
   .numbers span {
     display: block;
@@ -19,3 +14,10 @@ header {
     color: $pr_white;
   }
 }
+
+@media screen and (max-width: 380px) {
+  header .align-right {
+    text-align: left;
+  }
+}
+

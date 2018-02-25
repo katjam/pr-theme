@@ -1,17 +1,18 @@
 <header id="header" class="banner">
   <div class="container">
-    <div class="alignleft">
-      <div class="logo">
-        <a class="brand" href="<?= esc_url(home_url('/')); ?>">
-          <span class="screen-reader-text"><?php bloginfo('name'); ?></span>
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo.jpg" />
-        </a>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="logo">
+          <a class="brand" href="<?= esc_url(home_url('/')); ?>">
+            <span class="screen-reader-text"><?php bloginfo('name'); ?></span>
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo.jpg" />
+          </a>
+        </div>
+        <p><?php echo get_bloginfo('description', 'display'); ?></p>
       </div>
-      <p><?php echo get_bloginfo('description', 'display'); ?></p>
-    </div>
-
-    <div class='alignright'>
-      <?php dynamic_sidebar('sidebar-header'); ?>
+      <div class="col-md-4 align-right">
+        <?php dynamic_sidebar('sidebar-header'); ?>
+      </div>
     </div>
   </div>
 </header>

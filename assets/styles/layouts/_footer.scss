@@ -3,19 +3,12 @@
 }
 
 footer {
-  color: $pr_grey;
+  color: $pr_white;
   background-color: $pr_black;
   width: 100%;
-  font-size: 0.8em;
+  font-size: 1em;
   height: 144px;
   position: absolute;
   bottom: 0;
   padding: 1em;
-  div br {
-    display: none;
-  }
-  .container div {
-    text-align: center;
-    padding: 0.2em 0;
-  }
 }
