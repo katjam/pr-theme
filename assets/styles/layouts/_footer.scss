@@ -1,17 +1,18 @@
+.before-footer {
+  margin-bottom: 1em;
+  .rics {
+    font-weight: 700;
+  }
+
+}
+
 footer {
-  color: $pr_white;
+  color: $pr_grey;
   background-color: $pr_black;
   width: 100%;
   font-size: 0.8em;
-  padding: 1em;
   
   div {
     padding: 6px;
-  }
-
-  .rics-logo {
-    background: url(../images/rics-logo-64.png) no-repeat;
-    height: 60px;
-    padding-left: 68px;
   }
 }
