@@ -6,6 +6,20 @@ body {
   height: 100%;
   font-family: 'Lato', sans-serif;
   text-align: justify;
+
+  h1 {
+    font-weight: 700;
+    font-size: 1.3em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+
+  h3,h4,h5,h6 {
+    font-size: 1em;
+    font-weight: 700;
+  }
 }
 
 main {

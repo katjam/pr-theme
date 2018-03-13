@@ -8,7 +8,7 @@
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo.jpg" />
           </a>
         </div>
-        <p><?php echo get_bloginfo('description', 'display'); ?></p>
+        <h2><?php echo get_bloginfo('description', 'display'); ?></h2>
       </div>
       <div class="col-md-4 align-right">
         <?php dynamic_sidebar('sidebar-header'); ?>
