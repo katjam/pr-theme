@@ -3,8 +3,15 @@ header {
   background-color: $pr_blue;
   padding: 10px;
   height: 150px;
+  
+  h2 {
+    font-size: 1.3em;
+    font-weight: 700;
+    text-align: left;
+  }
+  
   .align-right {
-    text-align:right;
+    text-align: right;
   }
   .numbers span {
     display: block;
