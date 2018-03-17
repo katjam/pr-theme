@@ -5,3 +5,11 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .page-content {
+    img {
+      width: 100%;
+    }
+  }
+}

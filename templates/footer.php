@@ -5,7 +5,7 @@
 </div>
 <footer id="footer" class="content-info">
   <div class="container">
-    <div class="row">
+    <div class="d-md-flex">
       <?php dynamic_sidebar('sidebar-footer'); ?>
     </div>
   </div>
