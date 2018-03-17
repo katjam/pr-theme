@@ -1,7 +1,7 @@
 <header id="header" class="banner">
   <div class="container">
-    <div class="row">
-      <div class="col-md-8">
+    <div class="d-md-flex">
+      <div class="col-sm-8">
         <div class="logo">
           <a class="brand" href="<?= esc_url(home_url('/')); ?>">
             <span class="screen-reader-text"><?php bloginfo('name'); ?></span>
@@ -10,7 +10,7 @@
         </div>
         <h2><?php echo get_bloginfo('description', 'display'); ?></h2>
       </div>
-      <div class="col-md-4 align-right">
+      <div class="ml-auto align-right col-lg-4">
         <?php dynamic_sidebar('sidebar-header'); ?>
       </div>
     </div>
