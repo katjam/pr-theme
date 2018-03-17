@@ -1,7 +1,7 @@
 <header id="header" class="banner">
   <div class="container">
     <div class="d-md-flex">
-      <div class="col-sm-8">
+      <div>
         <div class="logo">
           <a class="brand" href="<?= esc_url(home_url('/')); ?>">
             <span class="screen-reader-text"><?php bloginfo('name'); ?></span>
