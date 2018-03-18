@@ -16,6 +16,9 @@
                 <?php if($field['heading'] != '') echo '<h3>'. esc_attr( $field['heading'] ) . '</h3>'; ?>
                 <?php if($field['text'] != '') echo '<p>'. esc_attr( $field['text'] ) . '</p>'; ?>
               </div>
+              <div>
+                <?php if($field['pdf_src'] && $field['pdf_src']['url'] != '') echo '<a href="'.$field['pdf_src']['url'].'" role="button" class="button">Download Pdf</a>'; ?>
+              </div>
             </div>
           <?php } ?>
         <?php endif; ?>
