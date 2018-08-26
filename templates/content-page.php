@@ -24,7 +24,12 @@
                 </a>
               </p>
               <div style="margin-bottom: 50px;" >
-<a href="'.$field['pdf_src'].'" role="button" class="button"><span class="fa fa-file-pdf-o"></span>Download PDF Brochure</a>
+              <?php $field = get_post_meta( get_the_ID(), 'pr_property_listing_pdf', true); ?>
+              <?php if ($field && $field['url']) :?>
+              <a href="<?php echo $field['url'] ?>" role="button" class="button">
+                <span class="fa fa-file-pdf-o"></span>Download PDF Brochure
+              </a>
+              <?php endif; ?>
               </div>
               </div>
             </div>
