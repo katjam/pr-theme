@@ -13,7 +13,9 @@
               <div>
                 <?php if($field['heading'] != '') echo '<h3>'. esc_attr( $field['heading'] ) . '</h3>'; ?>
                 <?php if($field['text'] != '') echo '<p>'. esc_attr( $field['text'] ) . '</p>'; ?>
-                <?php if($field['pdf_src'] != '' && $field['pdf_src'] != 'No pdf') echo '<a href="'.$field['pdf_src'].'" role="button" class="button"><span class="fa fa-file-pdf-o"></span>Download PDF Brochure</a>'; ?>
+                <?php if($field['pdf_src'] != '' && $field['pdf_src'] != 'No pdf'): ?>
+                  <a href="<?php echo $field['pdf_src'] ?>" role="button" class="button"><span class="fa fa-file-pdf-o"></span>Download PDF Brochure</a>
+                <?php endif;?>
               </div>
             </div>
           <?php } ?>
