@@ -10,13 +10,6 @@
       <div class="d-md-flex">
       <div><?php the_content(); ?></div>
       <div class="pl-md-2 pb-2" style="text-align: right;">
-        <?php if($field && $field['url'] != '' ): ?>
-        <div style="padding-bottom: 20px;">
-          <a href="<?php echo $field['url']; ?>" role="button" class="button">
-            <span class="fa fa-file-pdf-o"></span>Download PDF Brochure
-          </a>
-        </div>
-        <?php endif; ?>
         <?php the_post_thumbnail( 'main-page' ); ?>
       </div>
       </div>
