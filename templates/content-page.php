@@ -14,7 +14,15 @@
         while ($prop_query->have_posts()) : $prop_query->the_post();
           ?>
           <div class="d-md-flex pb-md-2">
-              <div class="pr-md-2"><?php the_post_thumbnail('medium'); ?></div>
+              <?php $status = get_post_meta( get_the_ID(), 'pr_property_listing_status', true); ?>
+                  <div class="pr-md-2">
+                      <div class="pr-prop-teaser-image">
+                      <?php the_post_thumbnail('medium'); ?>
+                      <?php if ($status && $status !== 'None'): ?>
+                      <span class="status"><?=$status?></span>
+                      <?php endif; ?>
+                      </div>
+              </div>
               <div>
               <h3><?php the_title(); ?></h3>
               <p>
@@ -24,9 +32,9 @@
                 </a>
               </p>
               <div style="margin-bottom: 50px;" >
-              <?php $field = get_post_meta( get_the_ID(), 'pr_property_listing_pdf', true); ?>
-              <?php if ($field && $field['url']) :?>
-              <a href="<?php echo $field['url'] ?>" role="button" class="button">
+              <?php $pdf_field = get_post_meta( get_the_ID(), 'pr_property_listing_pdf', true); ?>
+              <?php if ($pdf_field && $pdf_field['url']) :?>
+              <a href="<?php echo $pdf_field['url'] ?>" role="button" class="button">
                 <span class="fa fa-file-pdf-o"></span>Download PDF Brochure
               </a>
               <?php endif; ?>
