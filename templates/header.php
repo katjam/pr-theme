@@ -5,7 +5,7 @@
         <div class="logo">
           <a class="brand" href="<?= esc_url(home_url('/')); ?>">
             <span class="screen-reader-text"><?php bloginfo('name'); ?></span>
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logov2.svg" />
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logov2.svg" style="max-width: 300px;" />
           </a>
         </div>
         <h2><?php echo get_bloginfo('description', 'display'); ?></h2>
